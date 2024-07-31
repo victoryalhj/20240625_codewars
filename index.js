@@ -1,3 +1,35 @@
+//Highest and Lowest
+function highAndLow(numbers){
+  const nums = numbers.split(' ').map(Number);
+ 
+   const hightestNum = Math.max(...nums);
+   const lowestNum = Math.min(...nums);
+ 
+   return `${hightestNum} ${lowestNum}`;
+ }
+ 
+ console.log(highAndLow("1 2 3 4 5"))
+ 
+
+
+//Disemvowel
+function disemvowel(str) {
+  const vowels = ['a','i','e','o','u','A','I','E','O','U'];
+  let result = '';
+
+  for (let i = 0; i < str.length; i++) {
+    if (!vowels.includes(str[i])) {
+      result += str[i];
+    }
+
+  }
+  return result;
+}
+
+console.log(disemvowel("This website is for losers LOL!"))
+
+
+
 //MakeUpperCase
 function MakeUpperCase(str) {
   return str.toUpperCase();
@@ -73,3 +105,6 @@ function greet (name) {
 
 const name = greet("제니")
 console.log("안녕 내 이름은 "+name+"야")
+
+//ES6
+//1.다음의 코드를 es6 문법을 이용하여 재작성하시오
